@@ -7,16 +7,12 @@ public class Controle {
     	name   = n;
     	prenom = p;
     }
-    
-	
-	public Boolean setc() {
+public Boolean setc() {
 	    Boolean ok= false;
 		if(name.length() != 0 && prenom.length() !=0 ){
-			ControleView();
 			ok = true;
 		}
 		else {
-			ControleView();
 			ok = false;
 		}
    return ok;
@@ -26,9 +22,4 @@ public class Controle {
 		 String m = "Nom:"+this.name+" prenom:"+this.prenom;
 		 return m;
 	}
-		
-	public void ControleView(){
-			System.out.println(name+"_"+prenom);
-	}
-
 }
