@@ -72,11 +72,9 @@ public class View extends Frame implements ActionListener  {
     public void Update(String ok,String not,Preson p){
     	b.addActionListener(new ActionListener() {
     		Preson j = new Preson();
-    		Boolean n;
     		public void actionPerformed(ActionEvent e) {
     			Controle c = new Controle(tn.getText(),tp.getText());
-    			n = c.setc();
-    			if (n==true){
+    			if (c.setc()){
     				Update();
     	    		r.setText(ok);
     	    		j.Setlist(tn.getText(),tp.getText());
