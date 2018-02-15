@@ -1,7 +1,4 @@
 package Org.save.Info;
-
-import java.io.FileNotFoundException;
-
 public class Model {
   View v;
   Preson p;
