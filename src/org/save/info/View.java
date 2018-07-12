@@ -71,13 +71,13 @@ public class View extends Frame implements ActionListener  {
     
     public void Update(String ok,String not,Preson p){
     	b.addActionListener(new ActionListener() {
-    		Preson j = new Preson();
+    		Preson l = new Preson();
     		public void actionPerformed(ActionEvent e) {
     			Controle c = new Controle(tn.getText(),tp.getText());
     			if (c.setc()){
     				Update();
     	    		r.setText(ok);
-    	    		j.Setlist(tn.getText(),tp.getText());
+    	    		l.Setlist(tn.getText(),tp.getText());
     	    		p.Setlist(j.getNom(),j.getPrenom());
     	    		try {
 						p.SaveOnFile();
