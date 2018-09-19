@@ -10,13 +10,8 @@ public class Controle {
     }
 public Boolean setc() {
 	    Boolean ok= false;
-		if(name.length() != 0 && prenom.length() !=0 ){
-			ok = true;
-		}
-		else {
-			ok = false;
-		}
-   return ok;
+	    ok =name.length() != 0 && prenom.length() !=0 
+            return ok;
 }
 	
 	public String tostring(){
